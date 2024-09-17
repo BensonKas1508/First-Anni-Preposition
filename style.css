@@ -1,0 +1,92 @@
+/* Resetting margin, padding, and box-sizing for a consistent layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif; /* Ensure this font is loaded or available */
+}
+
+/* Setting up the body to be centered with a soft background color */
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #FA82E9, #FD86B9);
+    padding: 20px;
+}
+
+/* Container styling with centered alignment and spacing */
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    width: 100%;
+    background: #fff; /* Adding background to container for contrast */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+}
+
+/* Styling for the gif embed */
+.container .tenor-gif-embed {
+    max-width: 200px;
+    margin: 0 auto; /* Centering the gif */
+}
+
+/* Styling for the button container */
+.container .btn {
+    display: flex;
+    gap: 20px; /* Consistent gap between buttons */
+}
+
+/* Button styling */
+.btn a {
+    text-decoration: none;
+    color: #fff; /* White text for better contrast */
+    background: #007bff; /* Bootstrap-like blue color for primary action */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+}
+
+.btn a:hover {
+    background: #0056b3; /* Darker shade of blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Welcome page specific styling */
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    background: #ffffff; /* White background for the welcome message */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow for emphasis */
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.welcome-container h1 {
+    color: #ff69b4; /* Pink color for the anniversary message */
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+.welcome-container p {
+    font-size: 1.2em;
+    color: #4682b4; /* Blue color for the click prompt */
+    cursor: pointer;
+}
+
+.welcome-container p:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
+}
